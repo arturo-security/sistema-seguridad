@@ -10,29 +10,29 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://wallpapercave.com/wp/wp9138949.jpg'); /* Nueva imagen de fondo */
-            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-image: url('https://wallpapercave.com/wp/wp9138949.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px;
-            background-color: rgba(248, 248, 248, 0.8); /* Fondo semi-transparente para el encabezado */
+            background-color: rgba(248, 248, 248, 0.8);
         }
         .logo-ipn {
-            width: 100px; /* Ajusta el tamaño según sea necesario */
+            width: 100px;
         }
         .logo-seguridad {
-            width: 150px; /* Aumenta el tamaño del logo de seguridad */
-            position: absolute; /* Para posicionar en la parte derecha */
-            top: 10px; /* Ajusta la posición vertical */
-            right: 10px; /* Ajusta la posición horizontal */
+            width: 150px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
         main {
-            text-align: center; /* Centra todo el texto dentro del main */
-            margin-top: 50px; /* Para evitar que el texto esté detrás del logo de seguridad */
+            text-align: center;
+            margin-top: 50px;
         }
         footer {
             text-align: center;
@@ -40,22 +40,27 @@
             background-color: #f1f1f1;
         }
         .logo-esime {
-            width: 100px; /* Ajusta el tamaño según sea necesario */
-            position: absolute; /* Para posicionar en la parte inferior derecha */
-            bottom: 10px; /* Ajusta la posición vertical */
-            right: 10px; /* Ajusta la posición horizontal */
+            width: 100px;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
         }
-        /* Nuevo estilo para cambiar el color del texto en la sección #inicio a blanco */
         #inicio h1,
         #inicio p {
-            color: white; /* Cambia el color del texto a blanco */
+            color: white;
+        }
+        form {
+            margin-top: 20px; /* Espaciado para el formulario */
+        }
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <header>
         <img src="https://vectorseek.com/wp-content/uploads/2023/08/IPN-National-Polytechnic-Institute-Logo-Vector.svg-.png" alt="Logo IPN" class="logo-ipn">
-       
     </header>
 
     <img src="https://seprytec.com/img_pag/iconos_portada/SEPRYTEC-guardias-de-seguridad.png" alt="Logo de Seguridad" class="logo-seguridad">
@@ -64,10 +69,17 @@
         <section id="inicio">
             <h1>Bienvenido a Nuestro Sistema de Seguridad</h1>
             <h2><p>Protegiendo lo que más valoras.</p></h2>
+            
+            <!-- Formulario para recibir datos -->
+            <form action="https://arturo-security.github.io/sistema-seguridad/" method="POST">
+                <label for="rfid">Ingrese su ID RFID:</label><br>
+                <input type="text" id="rfid" name="rfid" required><br>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
     </main>
 
-    <img src="http://www.ellosynosotros.com/wp-content/uploads/2014/09/esime_original.png" alt="Logo ESIME" class="logo-esime"> <!-- Logo en la parte inferior derecha -->
+    <img src="http://www.ellosynosotros.com/wp-content/uploads/2014/09/esime_original.png" alt="Logo ESIME" class="logo-esime">
 
     <footer>
         <p>Contacto: AGUIRRE GALINDO ARTURO | Teléfono: (123) 456-7890</p>
